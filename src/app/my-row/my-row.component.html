@@ -1,0 +1,12 @@
+<div class="container">
+    <ng2-smart-table 
+        mode="external"
+        [settings]="settings" 
+        [source]="lines" 
+        class="table-responsive"
+        (editConfirm)="onSaveConfirm($event)"
+        (edit)="onEdit($event)"
+        (deleteConfirm)="onDeleteConfirm($event)"
+        (createConfirm)="onCreateConfirm($event)">
+    </ng2-smart-table>
+</div>
